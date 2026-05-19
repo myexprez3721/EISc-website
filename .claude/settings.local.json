@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\US\\\\Desktop\" -File -Recurse -Depth 1 | Where-Object { $_.Extension -match \"\\\\.\\(png|jpg|jpeg|bmp|gif|webp\\)$\" } | Select-Object Name, DirectoryName)"
+    ]
+  }
+}
