@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\US\\\\Desktop\" -File -Recurse -Depth 1 | Where-Object { $_.Extension -match \"\\\\.\\(png|jpg|jpeg|bmp|gif|webp\\)$\" } | Select-Object Name, DirectoryName)"
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\US\\\\Desktop\" -File -Recurse -Depth 1 | Where-Object { $_.Extension -match \"\\\\.\\(png|jpg|jpeg|bmp|gif|webp\\)$\" } | Select-Object Name, DirectoryName)",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__get_page_text",
+      "mcp__0d4ec4aa-6e7a-4a61-8837-1a8277dc025a__create_project",
+      "Bash(git add *)"
     ]
   }
 }
