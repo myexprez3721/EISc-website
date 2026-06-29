@@ -12,7 +12,9 @@
       "Bash(git push *)",
       "Skill(run)",
       "Skill(run:*)",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "Bash(git commit -m 'Fix quote syntax error in Media Monitoring description *)",
+      "Bash(git commit -m 'Downgrade Next.js to 14.1.3 for Cloudflare Pages compatibility *)"
     ]
   }
 }

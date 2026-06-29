@@ -22,8 +22,8 @@ export default function Home() {
               <Link href="/services" className="btn-primary">
                 Explore Services
               </Link>
-              <Link href="/translate" className="btn-secondary">
-                Try Free Translation
+              <Link href="/contact" className="btn-secondary">
+                Get a Quote
               </Link>
             </div>
           </div>

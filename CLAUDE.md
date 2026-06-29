@@ -24,22 +24,18 @@ EIS Agency Website - A modern, full-stack Next.js website for Exprez Ideal Servi
 │   ├── globals.css             # Global Tailwind styles
 │   ├── services/page.tsx       # Services showcase page
 │   ├── about/page.tsx          # About & founder story
-│   ├── contact/page.tsx        # Contact form
-│   ├── translate/page.tsx      # Machine translation tool
-│   └── api/
-│       └── translate/route.ts  # Translation API endpoint
+│   └── contact/page.tsx        # Contact form
 ├── components/
 │   ├── Navigation.tsx          # Sticky navigation header
 │   ├── Footer.tsx              # Site footer
 │   ├── HeroSection.tsx         # Home hero section
 │   ├── LanguagesSection.tsx    # Supported languages grid
-│   ├── WhyChooseSection.tsx    # Why choose EIS
-│   └── TranslationTool.tsx     # Machine translation UI
+│   └── WhyChooseSection.tsx    # Why choose EIS
+├── public/images/              # Logo and static images
 ├── package.json                # Dependencies
 ├── tsconfig.json               # TypeScript config
 ├── tailwind.config.js          # Tailwind theme
 ├── next.config.js              # Next.js config
-├── .env.example                # Environment variables template
 └── .gitignore                  # Git ignore rules
 ```
 
@@ -52,19 +48,12 @@ EIS Agency Website - A modern, full-stack Next.js website for Exprez Ideal Servi
    npm install
    ```
 
-2. Create `.env.local` and add API keys (see `.env.example`):
-   ```
-   OPENAI_API_KEY=your-openai-key
-   ANTHROPIC_API_KEY=your-anthropic-key
-   GOOGLE_API_KEY=your-google-key
-   ```
-
-3. Run dev server:
+2. Run dev server:
    ```bash
    npm run dev
    ```
 
-4. Open http://localhost:3000 in your browser
+3. Open http://localhost:3000 in your browser
 
 ### Build for Production
 
@@ -77,38 +66,28 @@ npm start
 
 - **Modern, minimal design** with red and white color scheme
 - **Responsive** across all devices
-- **Machine Translation Tool** with:
-  - Support for ChatGPT, Claude, and Gemini
-  - 10 Asian languages
-  - Daily 400-word free limit
-  - Client-side word count tracking
-  - Backend API for secure model calls
-
-## Environment Variables
-
-Required for machine translation feature:
-- `OPENAI_API_KEY` - ChatGPT API access
-- `ANTHROPIC_API_KEY` - Claude API access
-- `GOOGLE_API_KEY` - Gemini API access
-
-See `.env.example` for template.
+- **10 Asian languages** coverage (English, Malay, Chinese, Japanese, Korean, Thai, Indonesian, Vietnamese, Burmese, Bengali)
+- **Easy deployment** to Cloudflare Pages (no API keys required)
 
 ## Deployment
 
-### Vercel (Recommended)
+### Cloudflare Pages (Recommended)
 
-1. Push to GitHub: `git push origin main`
-2. Connect repo at https://vercel.com/new
-3. Add environment variables in Vercel settings
-4. Deploy automatically on push
+1. Go to **Cloudflare Dashboard** → **Pages**
+2. Click **"Create a project"** → **"Connect to Git"**
+3. Select **GitHub** and authorize, then select **EISc-website** repo
+4. **Build settings:**
+   - Build command: `npm run build`
+   - Output directory: `.next`
+5. Click **Deploy** and you're live!
 
 ### Other Platforms
 
-Works with any Node.js hosting (Heroku, Railway, Render, etc.)
+Works with any Node.js hosting (Vercel, Heroku, Railway, Render, etc.)
 
 ## Design Notes
 
 - **Brand Colors:** Primary red (#B91C1C), white backgrounds
 - **Typography:** Clean sans-serif with serif accents on logo
 - **Layout:** Modern & minimal with generous whitespace
-- **CTA:** Get a Quote, Try Free Translation, Contact Us
+- **CTA:** Get a Quote, Contact Us, Explore Services

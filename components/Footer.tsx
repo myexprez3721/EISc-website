@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Image
-              src="/images/eis-logo.png"
+              src="/images/EIS Logo.JPG"
               alt="EIS Agency"
               width={60}
               height={60}
@@ -41,11 +41,6 @@ export default function Footer() {
               <li>
                 <Link href="/about" className="hover:text-primary transition-colors">
                   About
-                </Link>
-              </li>
-              <li>
-                <Link href="/translate" className="hover:text-primary transition-colors">
-                  Translator
                 </Link>
               </li>
             </ul>

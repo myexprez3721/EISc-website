@@ -14,7 +14,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/eis-logo.png"
+              src="/images/EIS Logo.JPG"
               alt="EIS Agency"
               width={50}
               height={50}
@@ -32,9 +32,6 @@ export default function Navigation() {
             </Link>
             <Link href="/about" className="hover:text-primary transition-colors">
               About
-            </Link>
-            <Link href="/translate" className="hover:text-primary transition-colors">
-              Translate
             </Link>
             <Link href="/contact" className="btn-primary text-sm">
               Contact
@@ -63,9 +60,6 @@ export default function Navigation() {
             </Link>
             <Link href="/about" className="block py-2 hover:text-primary transition-colors">
               About
-            </Link>
-            <Link href="/translate" className="block py-2 hover:text-primary transition-colors">
-              Translate
             </Link>
             <Link href="/contact" className="block py-2 mt-2 btn-primary text-center">
               Contact
