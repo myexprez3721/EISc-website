@@ -19,7 +19,7 @@ export default function Services() {
     {
       title: 'Media Monitoring',
       description:
-        'Stay informed about what's being said about your brand in Chinese media and the broader Asia-Pacific region. We provide actionable insights into local media landscapes.',
+        "Stay informed about what's being said about your brand in Chinese media and the broader Asia-Pacific region. We provide actionable insights into local media landscapes.",
       icon: '📰',
     },
     {
