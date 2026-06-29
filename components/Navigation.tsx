@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Navigation() {
@@ -11,8 +12,14 @@ export default function Navigation() {
       <div className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="font-serif font-bold text-2xl text-primary">
-            EIS
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/eis-logo.png"
+              alt="EIS Agency"
+              width={50}
+              height={50}
+              priority
+            />
           </Link>
 
           {/* Desktop Menu */}

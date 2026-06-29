@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,7 +12,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="font-serif font-bold text-2xl text-primary mb-4">EIS</div>
+            <Image
+              src="/images/eis-logo.png"
+              alt="EIS Agency"
+              width={60}
+              height={60}
+              className="mb-4"
+            />
             <p className="text-gray-400 text-sm">
               Malaysia-based language support company connecting regions through communication.
             </p>
